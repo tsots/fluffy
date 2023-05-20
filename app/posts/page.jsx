@@ -1,10 +1,7 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 import Link from "next/link";
-
 import { getAllPostsMeta } from "@/lib/";
 
-const Home = async () => {
+const Page = async () => {
   const posts = await getAllPostsMeta();
 
   return (
@@ -31,4 +28,4 @@ const Home = async () => {
   );
 };
 
-export default Home;
+export default Page;
